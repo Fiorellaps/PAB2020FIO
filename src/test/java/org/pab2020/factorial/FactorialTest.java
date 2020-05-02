@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * negativ0->??
  * 4->24
  */
-class FactotialTest {
+class FactorialTest {
 
     private Factorial factorial;
     @BeforeEach
@@ -57,6 +57,7 @@ class FactotialTest {
 
         assertThrows(RuntimeException.class,() -> factorial.compute(-1));
     }
+    @Test
     public void shouldFactorialHigher26RaiseException() {
 
         assertThrows(RuntimeException.class,() -> factorial.compute(26));

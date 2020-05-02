@@ -22,13 +22,5 @@ public class Factorial {
 
         return result;
     }
-    public static void main(String[] args){
-        Factorial f = new Factorial();
-        long res = f.compute(26);
-        System.out.println(res);
-
-    }
-
-
 }
 
