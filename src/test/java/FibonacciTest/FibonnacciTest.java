@@ -48,6 +48,7 @@ public class FibonnacciTest {
     public void shouldFibonacciHigherValue40RaiseException() {
         assertThrows(RuntimeException.class,() -> fibonacci.compute(41,1));
     }
+
     @Test
     public void shouldFibonacciHigherK5RaiseException() {
         assertThrows(RuntimeException.class,() -> fibonacci.compute(3,6));

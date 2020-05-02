@@ -57,6 +57,10 @@ class FactotialTest {
 
         assertThrows(RuntimeException.class,() -> factorial.compute(-1));
     }
+    public void shouldFactorialHigher26RaiseException() {
+
+        assertThrows(RuntimeException.class,() -> factorial.compute(26));
+    }
 
 
 
