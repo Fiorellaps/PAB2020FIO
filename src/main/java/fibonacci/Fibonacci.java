@@ -1,5 +1,8 @@
 package fibonacci;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Fibonacci {
     public long compute(long value, long k) {
         long result;
@@ -12,12 +15,12 @@ public class Fibonacci {
             result= 1;
         }else {
             //result = compute(value-1, k )+ k* compute(value -2, k);
-            //resultAnt guarada el resultado del número anterior, que en esta caso es 1 porque el número anterior es 2
+            //resultAnt saves the result of the previous number which starts by one as result
             resAnt=1;
             result=1;
-            for(int i =3; i<=value; i++){
+            for(int i =3; i<=value; i++) {
                 result = result + k * resAnt;
-                resAnt = result - k* resAnt;
+                resAnt = result - k * resAnt;
             }
         }
         return result;
